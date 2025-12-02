@@ -147,7 +147,7 @@ class SteadyHeat:
 def main():
     model = SteadyHeat(320, 1, (32, 32))
     model.finite_difference() 
-    model.pinn_eval(1e-3, 1000)
+    model.pinn_eval(1e-3, 5000)
     model.plot()
     model.save("pinn.keras") 
 
